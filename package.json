@@ -3,11 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "build": "tsc && vite build",
-  "server": "node server.js",  <-- LOOK FOR SOMETHING LIKE THIS
-  "ingest": "ts-node scripts/ingest.ts" <-- OR THIS
-},
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },,
   "dependencies": {
     "@nivo/core": "^0.99.0",
     "@nivo/heatmap": "^0.99.0",
