@@ -3,15 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "start": "vite",
-    "test": "vitest --run",
-    "validate-auth": "node scripts/validate-credentials.js",
-    "setup": "node scripts/setup.js",
-    "format.fix": "prettier --write .",
-    "typecheck": "tsc"
-  },
+  "dev": "vite",
+  "build": "tsc && vite build",
+  "server": "node server.js",  <-- LOOK FOR SOMETHING LIKE THIS
+  "ingest": "ts-node scripts/ingest.ts" <-- OR THIS
+},
   "dependencies": {
     "@nivo/core": "^0.99.0",
     "@nivo/heatmap": "^0.99.0",
